@@ -8,6 +8,7 @@ import {normalize} from '~/components/styles/ResponsiveSize';
 import HomeStackScreen from '~/screens/Home'; //홈
 import LoginStackScreen from '~/screens/Login'; // 로그인
 import ScrapStackScreen from '~/screens/Scrap'; // 스크랩
+import ManagementStackScreen from '~/screens/Management'; //지원관리
 
 //하단탭 필요없는 페이지 처리
 const isTabBarVisible = route => {
@@ -77,7 +78,6 @@ function HomeTabs() {
           ),
         }}
       />
-      {/*
       <Tab.Screen
         name="Management"
         component={ManagementStackScreen}
@@ -94,6 +94,7 @@ function HomeTabs() {
           ),
         }}
       />
+      {/*
       <Tab.Screen
         name="Attendance"
         component={AttendanceStackScreen}
