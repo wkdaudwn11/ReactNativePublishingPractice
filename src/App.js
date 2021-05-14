@@ -5,7 +5,8 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import styled from 'styled-components/native';
 import {normalize} from '~/components/styles/ResponsiveSize';
 
-import HomeStackScreen from '~/screens/Home/index'; //홈
+import HomeStackScreen from '~/screens/Home'; //홈
+import LoginStackScreen from '~/screens/Login'; // 로그인
 
 //하단탭 필요없는 페이지 처리
 const isTabBarVisible = route => {
@@ -72,6 +73,13 @@ const App = () => {
         <RootStack.Screen
           name="Home"
           component={HomeTabs}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <RootStack.Screen
+          name="Login"
+          component={LoginStackScreen}
           options={{
             headerShown: false,
           }}
