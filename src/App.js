@@ -9,6 +9,8 @@ import HomeStackScreen from '~/screens/Home'; //홈
 import LoginStackScreen from '~/screens/Login'; // 로그인
 import ScrapStackScreen from '~/screens/Scrap'; // 스크랩
 import ManagementStackScreen from '~/screens/Management'; //지원관리
+import AttendanceStackScreen from '~/screens/Attendance'; //출근확인
+// import MyPageStackScreen from '~/screens/MyPage'; //MY
 
 //하단탭 필요없는 페이지 처리
 const isTabBarVisible = route => {
@@ -94,7 +96,6 @@ function HomeTabs() {
           ),
         }}
       />
-      {/*
       <Tab.Screen
         name="Attendance"
         component={AttendanceStackScreen}
@@ -111,9 +112,10 @@ function HomeTabs() {
           ),
         }}
       />
+      {/*
       <Tab.Screen
-        name="Mypage"
-        component={MypageStackScreen}
+        name="MyPage"
+        component={MyPageStackScreen}
         options={{
           tabBarLabel: 'MY',
           tabBarIcon: ({focused}) => (
