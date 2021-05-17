@@ -12,7 +12,7 @@ export default function MypageStackScreen() {
         headerTitleAlign: 'center',
         headerStyle: {
           elevation: 0,
-          shadowColor: 'transparent',,
+          shadowColor: 'transparent',
         },
         headerTintColor: '#FF8500',
         headerTitleStyle: {

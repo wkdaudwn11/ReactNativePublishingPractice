@@ -80,8 +80,8 @@ export const BottomBtn = styled.TouchableOpacity`
   height: ${normalize(130)};
   justify-content: center;
   align-items: center;
-  bordertopwidth: 1px;
-  bordertopcolor: ${props => (props.isNext === false ? '#999' : '#FF8500')};
+  border-top-width: 1px;
+  border-top-color: ${props => (props.isNext === false ? '#999' : '#FF8500')};
 `;
 
 export const BottomBtnText = styled.Text`

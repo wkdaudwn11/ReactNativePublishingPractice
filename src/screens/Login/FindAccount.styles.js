@@ -55,8 +55,8 @@ export const BottomBtn = styled.TouchableOpacity`
   background: #fff;
   justify-content: center;
   align-items: center;
-  bordertopwidth: 1px;
-  bordertopcolor: ${props => (props.isNext === false ? '#999' : '#FF8500')};
+  border-top-width: 1px;
+  border-top-color: ${props => (props.isNext === false ? '#999' : '#FF8500')};
 `;
 
 export const BottomBtnText = styled.Text`
@@ -73,10 +73,11 @@ export const TabButton = styled.TouchableOpacity`
   width: 50%;
   margin-bottom: ${normalize(40)};
   background-color: ${props => (props.isActive === true ? '#FF8500' : '#fff')};
-  bordertopwidth: 1px;
-  bordertopcolor: ${props => (props.isActive === true ? '#FF8500' : '#999')};
-  borderbottomwidth: 1px;
-  borderbottomcolor: ${props => (props.isActive === true ? '#FF8500' : '#999')};
+  border-top-width: 1px;
+  border-top-color: ${props => (props.isActive === true ? '#FF8500' : '#999')};
+  border-bottom-width: 1px;
+  border-bottom-color: ${props =>
+    props.isActive === true ? '#FF8500' : '#999'};
 `;
 
 export const TabText = styled.Text`

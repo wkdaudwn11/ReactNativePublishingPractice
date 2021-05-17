@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import styled from 'styled-components/native';
 import {normalize} from '~/components/styles/ResponsiveSize';
 
+// Tab
 import HomeStackScreen from '~/screens/Home'; //홈
 import LoginStackScreen from '~/screens/Login'; // 로그인
 import ScrapStackScreen from '~/screens/Scrap'; // 스크랩
